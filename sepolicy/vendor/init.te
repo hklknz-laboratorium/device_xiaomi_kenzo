@@ -55,3 +55,8 @@ allow init hal_keymaster_hwservice:hwservice_manager { add  find };
 allow init hal_power_service:service_manager { add };
 allow init servicemanager:binder { call  transfer };
 allow init sysfs_battery_supply:file { setattr };
+
+#Dolby
+allow init vendor_data_file:file lock;
+allow init hal_audio_default:binder call;
+allow init platform_app:binder call;
