@@ -513,23 +513,3 @@ etc/firmware/venus.mdt|00ef8b773c2674e7c03c4e46a4abb869f4dcb38a
 bin/wcnss_service|96b08d5bd996c8218a4d1252c630fbc636382a40
 lib/libsoeminfo.so|db852c03f5a7cda892a0a1052f5602d2ae727ec3
 lib64/libsoeminfo.so|42a6b8ca4f2ef9f28024a4fe9c41f01022d3569d
-
-# MotoDolbyV3
--app/MotoDolbyV3/MotoDolbyV3.apk
--product/priv-app/daxService/daxService.apk
-etc/permissions/com.dolby.daxservice.xml
-etc/permissions/com.motorola.dolby.dolbyui.features.xml
-etc/sysconfig/hiddenapi-whitelist-com.motorola.dolby.dolbyui.xml
-product/etc/permissions/com.dolby.daxservice.xml
-vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
-vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
-vendor/etc/dolby/dax-default.xml
-vendor/lib/libdapparamstorage.so
-vendor/lib/libstagefrightdolby.so
-vendor/lib/vendor.dolby.hardware.dms@1.0.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib64/libdapparamstorage.so
-vendor/lib64/libdlbdsservice.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so
