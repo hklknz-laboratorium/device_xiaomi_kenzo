@@ -95,4 +95,18 @@ void vendor_load_properties()
     property_override("dalvik.vm.heaptargetutilization", "0.75");
     property_override("dalvik.vm.heapminfree", heapminfree);
     property_override("dalvik.vm.heapmaxfree", heapmaxfree);
+    
+   // Safetynet Workaround
+    property_override("ro.debuggable", "0");
+    property_override("ro.build.type", "user");
+    property_override("ro.build.tags", "release-keys");
+    property_override("ro.build.selinux", "1");
+    property_override("ro.boot.warranty_bit", "0");
+    property_override("ro.warranty_bit", "0");
+    property_override("ro.secure", "1");
+    property_override("ro.boot.flash.locked", "1");
+    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.selinux", "enforcing");
+    property_override("ro.boot.veritymode", "enforcing");
+    property_override("ro.boot.vbmeta.device_state", "locked");    
 }
