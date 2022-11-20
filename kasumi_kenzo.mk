@@ -20,17 +20,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from kenzo device
 $(call inherit-product, device/xiaomi/kenzo/device.mk)
 
-# Inherit some common NusantaraROM stuff.
-$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
-NAD_BUILD_TYPE := OFFICIAL
-TARGET_USES_BLUR := true
-USE_AOSP_CLOCK := true
+# Inherit some common KasumiROM stuff.
+$(call inherit-product, vendor/kasumi/config/common_full_phone.mk)
+TARGET_FACE_UNLOCK_SUPPORTED := true
+KASUMI_SHIP_LAWNCHAIR := true
 
 # Set those variables here to overwrite the inherited values.
 BOARD_VENDOR := Xiaomi
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := kenzo
-PRODUCT_NAME := nad_kenzo
+PRODUCT_NAME := kasumi_kenzo
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 3
 TARGET_VENDOR := Xiaomi
